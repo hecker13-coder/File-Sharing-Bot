@@ -2,8 +2,11 @@
 
 from aiohttp import web
 from plugins import web_server
+import pyrogram.utils
 
-#import pyromod.listen
+pyrogram.utils.MIN_CHANNEL_ID = -1002602056543 #add your channel I'd here start with -100
+
+import pyromod.listen
 from pyrogram import Client
 from pyrogram.enums import ParseMode
 import sys
